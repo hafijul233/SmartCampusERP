@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.urbanui.com/polluxui/template/demo/horizontal-default-light/pages/samples/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jun 2019 17:36:45 GMT -->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>PolluxUI Premium Bootstrap Admin Dashboard Template</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="../../../vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../../../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="../../../vendors/jquery-bar-rating/css-stars.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../../css/horizontal-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_horizontal-navbar.html -->
+    <div class="horizontal-menu">
+      <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+        <div class="container">
+          <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo" href="../../index.html"><img src="http://www.urbanui.com/polluxui/template/images/logo.svg" alt="logo"/></a>
+            <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="http://www.urbanui.com/polluxui/template/images/logo-mini.svg" alt="logo"/></a>
+          </div>
+          <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+            <ul class="navbar-nav mr-lg-2">
+              <li class="nav-item nav-profile dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+                  <img src="../../../images/faces/face5.jpg" alt="profile"/>
+                  <span class="nav-profile-name">Eugenia Mullins</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+                  <a class="dropdown-item">
+                    <i class="typcn typcn-cog-outline text-primary"></i>
+                    Settings
+                  </a>
+                  <a class="dropdown-item">
+                    <i class="typcn typcn-eject text-primary"></i>
+                    Logout
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item nav-user-status dropdown">
+                  <p class="mb-0">Last login was 23 hours ago.</p>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item nav-date dropdown">
+                <a class="nav-link d-flex justify-content-center align-items-center" href="javascript:;">
+                  <h6 class="date mb-0">Today : Mar 23</h6>
+                  <i class="typcn typcn-calendar"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+                  <i class="typcn typcn-cog-outline mx-0"></i>
+                  <span class="count"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                  <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                        <img src="../../../images/faces/face4.jpg" alt="image" class="profile-pic">
+                    </div>
+                    <div class="preview-item-content flex-grow">
+                      <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                      </h6>
+                      <p class="font-weight-light small-text text-muted mb-0">
+                        The meeting is cancelled
+                      </p>
+                    </div>
+                  </a>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                        <img src="../../../images/faces/face2.jpg" alt="image" class="profile-pic">
+                    </div>
+                    <div class="preview-item-content flex-grow">
+                      <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                      </h6>
+                      <p class="font-weight-light small-text text-muted mb-0">
+                        New product launch
+                      </p>
+                    </div>
+                  </a>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                        <img src="../../../images/faces/face3.jpg" alt="image" class="profile-pic">
+                    </div>
+                    <div class="preview-item-content flex-grow">
+                      <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                      </h6>
+                      <p class="font-weight-light small-text text-muted mb-0">
+                        Upcoming board meeting
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item dropdown mr-0">
+                <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#" data-toggle="dropdown">
+                  <i class="typcn typcn-bell mx-0"></i>
+                  <span class="count"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-success">
+                        <i class="typcn typcn-info mx-0"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                      <p class="font-weight-light small-text mb-0 text-muted">
+                        Just now
+                      </p>
+                    </div>
+                  </a>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-warning">
+                        <i class="typcn typcn-cog-outline mx-0"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal">Settings</h6>
+                      <p class="font-weight-light small-text mb-0 text-muted">
+                        Private message
+                      </p>
+                    </div>
+                  </a>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-info">
+                        <i class="typcn typcn-user mx-0"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                      <p class="font-weight-light small-text mb-0 text-muted">
+                        2 days ago
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="horizontal-menu-toggle">
+              <span class="typcn typcn-th-menu"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <nav class="bottom-navbar">
+        <div class="container">
+          <ul class="nav page-navigation">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">
+                <i class="typcn typcn-device-desktop menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../widgets/widgets.html">
+                <i class="typcn typcn-archive menu-icon"></i>
+                <span class="menu-title">Widgets</span>
+              </a>
+            </li>
+            <li class="nav-item mega-menu">
+              <a href="#" class="nav-link">
+                <i class="typcn typcn-puzzle-outline menu-icon"></i>
+                <span class="menu-title">UI Elements</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="submenu">
+                <div class="col-group-wrapper row">
+                  <div class="col-group col-md-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="category-heading">Basic Elements</p>
+                        <div class="submenu-item">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/accordions.html">Accordion</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/buttons.html">Buttons</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/badges.html">Badges</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/breadcrumbs.html">Breadcrumbs</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/dropdowns.html">Dropdown</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/modals.html">Modals</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/progress.html">Progress bar</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/pagination.html">Pagination</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/tabs.html">Tabs</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/typography.html">Typography</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/tooltips.html">Tooltip</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-group col-md-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="category-heading">Advanced Elements</p>
+                        <div class="submenu-item">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/dragula.html">Dragula</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/carousel.html">Carousel</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/clipboard.html">Clipboard</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/context-menu.html">Context Menu</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/loaders.html">Loader</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/slider.html">Slider</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/popups.html">Popup</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/notifications.html">Notification</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-group col-md-4">
+                    <p class="category-heading">Icons</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../icons/flag-icons.html">Flag Icons</a></li>
+                      <li class="nav-item"> <a class="nav-link" href="../icons/mdi.html">Mdi icons</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../icons/font-awesome.html">Font Awesome</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../icons/simple-line-icon.html">Simple Line Icons</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../icons/themify.html">Themify Icons</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="typcn typcn-document-text menu-icon"></i>
+                <span class="menu-title">Forms</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <ul class="submenu-item">
+                  <li class="nav-item"><a class="nav-link" href="../forms/basic_elements.html">Basic Elements</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../forms/advanced_elements.html">Advanced Elements</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../forms/validation.html">Validation</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../forms/wizard.html">Wizard</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../forms/text_editor.html">Text Editor</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../forms/code_editor.html">Code Editor</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item mega-menu">
+              <a href="#" class="nav-link">
+                <i class="typcn typcn-chart-bar menu-icon"></i>
+                <span class="menu-title">Data</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <div class="col-group-wrapper row">
+                  <div class="col-group col-md-6">
+                    <p class="category-heading">Charts</p>
+                    <div class="submenu-item">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <ul>
+                            <li class="nav-item"><a class="nav-link" href="../charts/chartjs.html">Chart Js</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/morris.html">Morris</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/flot-chart.html">Flot</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/google-charts.html">Google Chart</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <ul>
+                            <li class="nav-item"><a class="nav-link" href="../charts/sparkline.html">Sparkline</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/c3.html">C3 Chart</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/chartist.html">Chartist</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/justGage.html">JustGage</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">Table</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../tables/basic-table.html">Basic Table</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../tables/data-table.html">Data Table</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../tables/js-grid.html">Js-grid</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../tables/sortable-table.html">Sortable Table</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">Maps</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../maps/mapael.html">Mapael</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../maps/vector-map.html">Vector Map</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../maps/google-maps.html">Google Map</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item mega-menu">
+              <a href="#" class="nav-link">
+                <i class="typcn typcn-book menu-icon"></i>
+                <span class="menu-title">Sample Pages</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <div class="col-group-wrapper row">
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">User Pages</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                      <li class="nav-item"><a class="nav-link" href="login-2.html">Login 2</a></li>
+                      <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                      <li class="nav-item"><a class="nav-link" href="register-2.html">Register 2</a></li>
+                      <li class="nav-item"><a class="nav-link" href="lock-screen.html">Lockscreen</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">Error Pages</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="error-400.html">400</a></li>
+                      <li class="nav-item"><a class="nav-link" href="error-404.html">404</a></li>
+                      <li class="nav-item"><a class="nav-link" href="error-500.html">500</a></li>
+                      <li class="nav-item"><a class="nav-link" href="error-505.html">505</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">E-commerce</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="invoice.html">Invoice</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pricing-table.html">Pricing Table</a></li>
+                      <li class="nav-item"><a class="nav-link" href="orders.html">Orders</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">General</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="search-results.html">Search Results</a></li>
+                      <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                      <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
+                      <li class="nav-item"><a class="nav-link" href="news-grid.html">News grid</a></li>
+                      <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                      <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="typcn typcn-th-large-outline menu-icon"></i>
+                <span class="menu-title">Apps</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <ul class="submenu-item">
+                  <li class="nav-item"><a class="nav-link" href="../apps/email.html">Email</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../apps/calendar.html">Calendar</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../apps/todo.html">Todo List</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../apps/gallery.html">Gallery</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="../documentation/documentation.html" class="nav-link">
+                <i class="typcn typcn-document-text menu-icon"></i>
+                <span class="menu-title">Documentation</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="border-bottom text-center pb-4">
+                        <img src="../../../images/faces/face12.jpg" alt="profile" class="img-lg rounded-circle mb-3"/>
+                        <div class="mb-3">
+                          <h3>David Grey. H</h3>
+                          <div class="d-flex align-items-center">
+                            <h5 class="mb-0 mr-2 text-muted">Canada</h5>
+                            <select id="profile-rating" name="rating" autocomplete="off">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                            </select>
+                          </div>
+                        </div>
+                        <p class="w-75 mx-auto mb-3">Bureau Oberhaeuser is a design bureau focused on Information- and Interface Design. </p>
+                        <div class="d-flex justify-content-center">
+                          <button class="btn btn-success mr-1">Hire Me</button>
+                          <button class="btn btn-success">Follow</button>
+                        </div>
+                      </div>
+                      <div class="border-bottom py-4">
+                        <p>Skills</p>
+                        <div>
+                          <label class="badge badge-outline-dark">Chalk</label>
+                          <label class="badge badge-outline-dark">Hand lettering</label>
+                          <label class="badge badge-outline-dark">Information Design</label>
+                          <label class="badge badge-outline-dark">Graphic Design</label>
+                          <label class="badge badge-outline-dark">Web Design</label>  
+                        </div>                                                               
+                      </div>
+                      <div class="border-bottom py-4">
+                        <div class="d-flex mb-3">
+                          <div class="progress progress-md flex-grow">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="55" style="width: 55%" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                        <div class="d-flex">
+                          <div class="progress progress-md flex-grow">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="py-4">
+                        <p class="clearfix">
+                          <span class="float-left">
+                            Status
+                          </span>
+                          <span class="float-right text-muted">
+                            Active
+                          </span>
+                        </p>
+                        <p class="clearfix">
+                          <span class="float-left">
+                            Phone
+                          </span>
+                          <span class="float-right text-muted">
+                            006 3435 22
+                          </span>
+                        </p>
+                        <p class="clearfix">
+                          <span class="float-left">
+                            Mail
+                          </span>
+                          <span class="float-right text-muted">
+                            Jacod@testmail.com
+                          </span>
+                        </p>
+                        <p class="clearfix">
+                          <span class="float-left">
+                            Facebook
+                          </span>
+                          <span class="float-right text-muted">
+                            <a href="#">David Grey</a>
+                          </span>
+                        </p>
+                        <p class="clearfix">
+                          <span class="float-left">
+                            Twitter
+                          </span>
+                          <span class="float-right text-muted">
+                            <a href="#">@davidgrey</a>
+                          </span>
+                        </p>
+                      </div>
+                      <button class="btn btn-primary btn-block mb-2">Preview</button>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <button class="btn btn-outline-primary">Message</button>
+                          <button class="btn btn-primary">Request</button>
+                        </div>
+                      </div>
+                      <div class="mt-4 py-2 border-top border-bottom">
+                        <ul class="nav profile-navbar">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">
+                              <i class="typcn typcn-user-outline"></i>
+                              Info
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                              <i class="typcn typcn-news"></i>
+                              Feed
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">
+                              <i class="typcn typcn-calendar-outline"></i>
+                              Agenda
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">
+                              <i class="typcn typcn-attachment-outline"></i>
+                              Resume
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="profile-feed">
+                        <div class="d-flex align-items-start profile-feed-item">
+                          <img src="../../../images/faces/face13.jpg" alt="profile" class="img-sm rounded-circle"/>
+                          <div class="ml-4">
+                            <h6>
+                              Mason Beck
+                              <small class="ml-4 text-muted"><i class="typcn typcn-time mr-1"></i>10 hours</small>
+                            </h6>
+                            <p>
+                              There is no better advertisement campaign that is low cost and also successful at the same time.
+                            </p>
+                            <p class="small text-muted mt-2 mb-0">
+                              <span>
+                                <i class="typcn typcn-star mr-1"></i>4
+                              </span>
+                              <span class="ml-2">
+                                <i class="typcn typcn-message mr-1"></i>11
+                              </span>
+                              <span class="ml-2">
+                                <i class="typcn typcn-export"></i>
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-start profile-feed-item">
+                          <img src="../../../images/faces/face16.jpg" alt="profile" class="img-sm rounded-circle"/>
+                          <div class="ml-4">
+                            <h6>
+                              Willie Stanley
+                              <small class="ml-4 text-muted"><i class="typcn typcn-time mr-1"></i>10 hours</small>
+                            </h6>
+                            <img src="../../../images/samples/1280x768/12.jpg" alt="sample" class="rounded mw-100"/>                            
+                            <p class="small text-muted mt-2 mb-0">
+                              <span>
+                                <i class="typcn typcn-star mr-1"></i>4
+                              </span>
+                              <span class="ml-2">
+                                <i class="typcn typcn-message mr-1"></i>11
+                              </span>
+                              <span class="ml-2">
+                                <i class="typcn typcn-export"></i>
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-start profile-feed-item">
+                          <img src="../../../images/faces/face19.jpg" alt="profile" class="img-sm rounded-circle"/>
+                          <div class="ml-4">
+                            <h6>
+                              Dylan Silva
+                              <small class="ml-4 text-muted"><i class="typcn typcn-time mr-1"></i>10 hours</small>
+                            </h6>
+                            <p>
+                              When I first got into the online advertising business, I was looking for the magical combination 
+                              that would put my website into the top search engine rankings
+                            </p>
+                            <img src="../../../images/samples/1280x768/5.jpg" alt="sample" class="rounded mw-100"/>                                                        
+                            <p class="small text-muted mt-2 mb-0">
+                              <span>
+                                <i class="typcn typcn-star mr-1"></i>4
+                              </span>
+                              <span class="ml-2">
+                                <i class="typcn typcn-message mr-1"></i>11
+                              </span>
+                              <span class="ml-2">
+                                <i class="typcn typcn-export"></i>
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+            <div class="w-100 clearfix">
+                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018 <a href="http://www.urbanui.com/" class="text-muted" target="_blank">Urbanui</a>. All rights reserved.</span>
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center text-muted">Hand-crafted & made with <i class="typcn typcn-heart-outline text-danger"></i></span>
+            </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- base:js -->
+  <script src="../../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../../js/off-canvas.js"></script>
+  <script src="../../../js/hoverable-collapse.js"></script>
+  <script src="../../../js/template.js"></script>
+  <script src="../../../js/settings.js"></script>
+  <script src="../../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- plugin js for this page -->
+  <script src="../../../vendors/jquery-bar-rating/jquery.barrating.min.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- Custom js for this page-->
+  <script src="../../../js/profile-demo.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+
+<!-- Mirrored from www.urbanui.com/polluxui/template/demo/horizontal-default-light/pages/samples/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jun 2019 17:36:48 GMT -->
+</html>

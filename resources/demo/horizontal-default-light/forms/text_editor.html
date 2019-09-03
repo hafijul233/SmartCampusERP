@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.urbanui.com/polluxui/template/demo/horizontal-default-light/pages/forms/text_editor.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jun 2019 17:35:50 GMT -->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>PolluxUI Premium Bootstrap Admin Dashboard Template</title>
+  <!-- base:css -->
+   <link rel="stylesheet" href="../../../vendors/typicons/typicons.css">
+   <link rel="stylesheet" href="../../../vendors/css/vendor.bundle.base.css">
+   <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="../../../vendors/summernote/dist/summernote-bs4.css">
+  <link rel="stylesheet" href="../../../vendors/quill/quill.snow.css">
+  <link rel="stylesheet" href="../../../vendors/simplemde/simplemde.min.css">
+  <!-- End plugin css for this page -->
+   <!-- inject:css -->
+   <link rel="stylesheet" href="../../../css/horizontal-layout-light/style.css">
+   <!-- endinject -->
+   <link rel="shortcut icon" href="../../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_horizontal-navbar.html -->
+    <div class="horizontal-menu">
+      <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+        <div class="container">
+          <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo" href="../../index.html"><img src="http://www.urbanui.com/polluxui/template/images/logo.svg" alt="logo"/></a>
+            <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="http://www.urbanui.com/polluxui/template/images/logo-mini.svg" alt="logo"/></a>
+          </div>
+          <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+            <ul class="navbar-nav mr-lg-2">
+              <li class="nav-item nav-profile dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+                  <img src="../../../images/faces/face5.jpg" alt="profile"/>
+                  <span class="nav-profile-name">Eugenia Mullins</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+                  <a class="dropdown-item">
+                    <i class="typcn typcn-cog-outline text-primary"></i>
+                    Settings
+                  </a>
+                  <a class="dropdown-item">
+                    <i class="typcn typcn-eject text-primary"></i>
+                    Logout
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item nav-user-status dropdown">
+                  <p class="mb-0">Last login was 23 hours ago.</p>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item nav-date dropdown">
+                <a class="nav-link d-flex justify-content-center align-items-center" href="javascript:;">
+                  <h6 class="date mb-0">Today : Mar 23</h6>
+                  <i class="typcn typcn-calendar"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+                  <i class="typcn typcn-cog-outline mx-0"></i>
+                  <span class="count"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                  <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                        <img src="../../../images/faces/face4.jpg" alt="image" class="profile-pic">
+                    </div>
+                    <div class="preview-item-content flex-grow">
+                      <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                      </h6>
+                      <p class="font-weight-light small-text text-muted mb-0">
+                        The meeting is cancelled
+                      </p>
+                    </div>
+                  </a>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                        <img src="../../../images/faces/face2.jpg" alt="image" class="profile-pic">
+                    </div>
+                    <div class="preview-item-content flex-grow">
+                      <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                      </h6>
+                      <p class="font-weight-light small-text text-muted mb-0">
+                        New product launch
+                      </p>
+                    </div>
+                  </a>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                        <img src="../../../images/faces/face3.jpg" alt="image" class="profile-pic">
+                    </div>
+                    <div class="preview-item-content flex-grow">
+                      <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                      </h6>
+                      <p class="font-weight-light small-text text-muted mb-0">
+                        Upcoming board meeting
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item dropdown mr-0">
+                <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#" data-toggle="dropdown">
+                  <i class="typcn typcn-bell mx-0"></i>
+                  <span class="count"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-success">
+                        <i class="typcn typcn-info mx-0"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                      <p class="font-weight-light small-text mb-0 text-muted">
+                        Just now
+                      </p>
+                    </div>
+                  </a>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-warning">
+                        <i class="typcn typcn-cog-outline mx-0"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal">Settings</h6>
+                      <p class="font-weight-light small-text mb-0 text-muted">
+                        Private message
+                      </p>
+                    </div>
+                  </a>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-info">
+                        <i class="typcn typcn-user mx-0"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                      <p class="font-weight-light small-text mb-0 text-muted">
+                        2 days ago
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="horizontal-menu-toggle">
+              <span class="typcn typcn-th-menu"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <nav class="bottom-navbar">
+        <div class="container">
+          <ul class="nav page-navigation">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">
+                <i class="typcn typcn-device-desktop menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../widgets/widgets.html">
+                <i class="typcn typcn-archive menu-icon"></i>
+                <span class="menu-title">Widgets</span>
+              </a>
+            </li>
+            <li class="nav-item mega-menu">
+              <a href="#" class="nav-link">
+                <i class="typcn typcn-puzzle-outline menu-icon"></i>
+                <span class="menu-title">UI Elements</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="submenu">
+                <div class="col-group-wrapper row">
+                  <div class="col-group col-md-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="category-heading">Basic Elements</p>
+                        <div class="submenu-item">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/accordions.html">Accordion</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/buttons.html">Buttons</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/badges.html">Badges</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/breadcrumbs.html">Breadcrumbs</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/dropdowns.html">Dropdown</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/modals.html">Modals</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/progress.html">Progress bar</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/pagination.html">Pagination</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/tabs.html">Tabs</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/typography.html">Typography</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/tooltips.html">Tooltip</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-group col-md-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="category-heading">Advanced Elements</p>
+                        <div class="submenu-item">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/dragula.html">Dragula</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/carousel.html">Carousel</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/clipboard.html">Clipboard</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/context-menu.html">Context Menu</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/loaders.html">Loader</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/slider.html">Slider</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/popups.html">Popup</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/notifications.html">Notification</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-group col-md-4">
+                    <p class="category-heading">Icons</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../icons/flag-icons.html">Flag Icons</a></li>
+                      <li class="nav-item"> <a class="nav-link" href="../icons/mdi.html">Mdi icons</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../icons/font-awesome.html">Font Awesome</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../icons/simple-line-icon.html">Simple Line Icons</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../icons/themify.html">Themify Icons</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="typcn typcn-document-text menu-icon"></i>
+                <span class="menu-title">Forms</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <ul class="submenu-item">
+                  <li class="nav-item"><a class="nav-link" href="basic_elements.html">Basic Elements</a></li>
+                  <li class="nav-item"><a class="nav-link" href="advanced_elements.html">Advanced Elements</a></li>
+                  <li class="nav-item"><a class="nav-link" href="validation.html">Validation</a></li>
+                  <li class="nav-item"><a class="nav-link" href="wizard.html">Wizard</a></li>
+                  <li class="nav-item"><a class="nav-link" href="text_editor.html">Text Editor</a></li>
+                  <li class="nav-item"><a class="nav-link" href="code_editor.html">Code Editor</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item mega-menu">
+              <a href="#" class="nav-link">
+                <i class="typcn typcn-chart-bar menu-icon"></i>
+                <span class="menu-title">Data</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <div class="col-group-wrapper row">
+                  <div class="col-group col-md-6">
+                    <p class="category-heading">Charts</p>
+                    <div class="submenu-item">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <ul>
+                            <li class="nav-item"><a class="nav-link" href="../charts/chartjs.html">Chart Js</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/morris.html">Morris</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/flot-chart.html">Flot</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/google-charts.html">Google Chart</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <ul>
+                            <li class="nav-item"><a class="nav-link" href="../charts/sparkline.html">Sparkline</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/c3.html">C3 Chart</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/chartist.html">Chartist</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/justGage.html">JustGage</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">Table</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../tables/basic-table.html">Basic Table</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../tables/data-table.html">Data Table</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../tables/js-grid.html">Js-grid</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../tables/sortable-table.html">Sortable Table</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">Maps</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../maps/mapael.html">Mapael</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../maps/vector-map.html">Vector Map</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../maps/google-maps.html">Google Map</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item mega-menu">
+              <a href="#" class="nav-link">
+                <i class="typcn typcn-book menu-icon"></i>
+                <span class="menu-title">Sample Pages</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <div class="col-group-wrapper row">
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">User Pages</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../samples/login.html">Login</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/login-2.html">Login 2</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/register.html">Register</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/register-2.html">Register 2</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/lock-screen.html">Lockscreen</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">Error Pages</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../samples/error-400.html">400</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/error-404.html">404</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/error-500.html">500</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/error-505.html">505</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">E-commerce</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../samples/invoice.html">Invoice</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/pricing-table.html">Pricing Table</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/orders.html">Orders</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">General</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../samples/search-results.html">Search Results</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/profile.html">Profile</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/timeline.html">Timeline</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/news-grid.html">News grid</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/portfolio.html">Portfolio</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/faq.html">FAQ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="typcn typcn-th-large-outline menu-icon"></i>
+                <span class="menu-title">Apps</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <ul class="submenu-item">
+                  <li class="nav-item"><a class="nav-link" href="../apps/email.html">Email</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../apps/calendar.html">Calendar</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../apps/todo.html">Todo List</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../apps/gallery.html">Gallery</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="../documentation/documentation.html" class="nav-link">
+                <i class="typcn typcn-document-text menu-icon"></i>
+                <span class="menu-title">Documentation</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row grid-margin">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">summernote Editor</h4>
+                  <div id="summernoteExample">
+                    <h4>The standard Lorem Ipsum passage, used since the 1500s</h4>
+                    <img src="../../../images/carousel/banner_1.jpg" class="ml-2 mb-2 w-25" alt="img">
+                    <p class="text-justify">
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+                    <p class="text-justify">
+                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                      magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row grid-margin">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Tinymce Editor</h4>
+                  <textarea id='tinyMceExample'>
+                    Edit your content here...
+                  </textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row grid-margin">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Quill Editor</h4>
+                  <div id="quillExample1" class="quill-container">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Simplemde Editor</h4>
+                  <textarea id="simpleMde">
+                  </textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+            <div class="w-100 clearfix">
+                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018 <a href="http://www.urbanui.com/" class="text-muted" target="_blank">Urbanui</a>. All rights reserved.</span>
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center text-muted">Hand-crafted & made with <i class="typcn typcn-heart-outline text-danger"></i></span>
+            </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- base:js -->
+  <script src="../../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="../../../vendors/tinymce/tinymce.min.js"></script>
+  <script src="../../../vendors/tinymce/themes/modern/theme.js"></script>
+  <script src="../../../vendors/summernote/dist/summernote-bs4.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../../js/off-canvas.js"></script>
+  <script src="../../../js/hoverable-collapse.js"></script>
+  <script src="../../../js/template.js"></script>
+  <script src="../../../js/settings.js"></script>
+  <script src="../../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- plugin js for this page -->
+  <script src="../../../vendors/summernote/dist/summernote-bs4.min.js"></script>
+  <script src="../../../vendors/tinymce/tinymce.min.js"></script>
+  <script src="../../../vendors/quill/quill.min.js"></script>
+  <script src="../../../vendors/simplemde/simplemde.min.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- Custom js for this page-->
+  <script src="../../../js/editorDemo.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+
+<!-- Mirrored from www.urbanui.com/polluxui/template/demo/horizontal-default-light/pages/forms/text_editor.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jun 2019 17:35:57 GMT -->
+</html>

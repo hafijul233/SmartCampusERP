@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.urbanui.com/polluxui/template/demo/horizontal-default-light/pages/forms/advanced_elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jun 2019 17:35:25 GMT -->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>PolluxUI Premium Bootstrap Admin Dashboard Template</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="../../../vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../../../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="../../../vendors/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../../vendors/jquery-bar-rating/bars-1to10.css">
+  <link rel="stylesheet" href="../../../vendors/jquery-bar-rating/bars-horizontal.css">
+  <link rel="stylesheet" href="../../../vendors/jquery-bar-rating/bars-movie.css">
+  <link rel="stylesheet" href="../../../vendors/jquery-bar-rating/bars-pill.css">
+  <link rel="stylesheet" href="../../../vendors/jquery-bar-rating/bars-reversed.css">
+  <link rel="stylesheet" href="../../../vendors/jquery-bar-rating/bars-square.css">
+  <link rel="stylesheet" href="../../../vendors/jquery-bar-rating/bootstrap-stars.css">
+  <link rel="stylesheet" href="../../../vendors/jquery-bar-rating/css-stars.css">
+  <link rel="stylesheet" href="../../../vendors/jquery-bar-rating/examples.css">
+  <link rel="stylesheet" href="../../../vendors/jquery-bar-rating/fontawesome-stars-o.css">
+  <link rel="stylesheet" href="../../../vendors/jquery-bar-rating/fontawesome-stars.css">
+  <link rel="stylesheet" href="../../../vendors/jquery-asColorPicker/css/asColorPicker.min.css">
+  <link rel="stylesheet" href="../../../vendors/x-editable/bootstrap-editable.css">
+  <link rel="stylesheet" href="../../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="../../../vendors/dropify/dropify.min.css">
+  <link rel="stylesheet" href="../../../vendors/jquery-file-upload/uploadfile.css">
+  <link rel="stylesheet" href="../../../vendors/jquery-tags-input/jquery.tagsinput.min.css">
+  <link rel="stylesheet" href="../../../vendors/tempusdominus-bootstrap-4/tempusdominus-bootstrap-4.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../../css/horizontal-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_horizontal-navbar.html -->
+    <div class="horizontal-menu">
+      <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+        <div class="container">
+          <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo" href="../../index.html"><img src="http://www.urbanui.com/polluxui/template/images/logo.svg" alt="logo"/></a>
+            <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="http://www.urbanui.com/polluxui/template/images/logo-mini.svg" alt="logo"/></a>
+          </div>
+          <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+            <ul class="navbar-nav mr-lg-2">
+              <li class="nav-item nav-profile dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+                  <img src="../../../images/faces/face5.jpg" alt="profile"/>
+                  <span class="nav-profile-name">Eugenia Mullins</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+                  <a class="dropdown-item">
+                    <i class="typcn typcn-cog-outline text-primary"></i>
+                    Settings
+                  </a>
+                  <a class="dropdown-item">
+                    <i class="typcn typcn-eject text-primary"></i>
+                    Logout
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item nav-user-status dropdown">
+                  <p class="mb-0">Last login was 23 hours ago.</p>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item nav-date dropdown">
+                <a class="nav-link d-flex justify-content-center align-items-center" href="javascript:;">
+                  <h6 class="date mb-0">Today : Mar 23</h6>
+                  <i class="typcn typcn-calendar"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+                  <i class="typcn typcn-cog-outline mx-0"></i>
+                  <span class="count"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                  <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                        <img src="../../../images/faces/face4.jpg" alt="image" class="profile-pic">
+                    </div>
+                    <div class="preview-item-content flex-grow">
+                      <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                      </h6>
+                      <p class="font-weight-light small-text text-muted mb-0">
+                        The meeting is cancelled
+                      </p>
+                    </div>
+                  </a>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                        <img src="../../../images/faces/face2.jpg" alt="image" class="profile-pic">
+                    </div>
+                    <div class="preview-item-content flex-grow">
+                      <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                      </h6>
+                      <p class="font-weight-light small-text text-muted mb-0">
+                        New product launch
+                      </p>
+                    </div>
+                  </a>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                        <img src="../../../images/faces/face3.jpg" alt="image" class="profile-pic">
+                    </div>
+                    <div class="preview-item-content flex-grow">
+                      <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                      </h6>
+                      <p class="font-weight-light small-text text-muted mb-0">
+                        Upcoming board meeting
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item dropdown mr-0">
+                <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#" data-toggle="dropdown">
+                  <i class="typcn typcn-bell mx-0"></i>
+                  <span class="count"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-success">
+                        <i class="typcn typcn-info mx-0"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                      <p class="font-weight-light small-text mb-0 text-muted">
+                        Just now
+                      </p>
+                    </div>
+                  </a>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-warning">
+                        <i class="typcn typcn-cog-outline mx-0"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal">Settings</h6>
+                      <p class="font-weight-light small-text mb-0 text-muted">
+                        Private message
+                      </p>
+                    </div>
+                  </a>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-info">
+                        <i class="typcn typcn-user mx-0"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                      <p class="font-weight-light small-text mb-0 text-muted">
+                        2 days ago
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="horizontal-menu-toggle">
+              <span class="typcn typcn-th-menu"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <nav class="bottom-navbar">
+        <div class="container">
+          <ul class="nav page-navigation">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">
+                <i class="typcn typcn-device-desktop menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../widgets/widgets.html">
+                <i class="typcn typcn-archive menu-icon"></i>
+                <span class="menu-title">Widgets</span>
+              </a>
+            </li>
+            <li class="nav-item mega-menu">
+              <a href="#" class="nav-link">
+                <i class="typcn typcn-puzzle-outline menu-icon"></i>
+                <span class="menu-title">UI Elements</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="submenu">
+                <div class="col-group-wrapper row">
+                  <div class="col-group col-md-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="category-heading">Basic Elements</p>
+                        <div class="submenu-item">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/accordions.html">Accordion</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/buttons.html">Buttons</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/badges.html">Badges</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/breadcrumbs.html">Breadcrumbs</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/dropdowns.html">Dropdown</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/modals.html">Modals</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/progress.html">Progress bar</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/pagination.html">Pagination</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/tabs.html">Tabs</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/typography.html">Typography</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/tooltips.html">Tooltip</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-group col-md-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="category-heading">Advanced Elements</p>
+                        <div class="submenu-item">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/dragula.html">Dragula</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/carousel.html">Carousel</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/clipboard.html">Clipboard</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/context-menu.html">Context Menu</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/loaders.html">Loader</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/slider.html">Slider</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/popups.html">Popup</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ui-features/notifications.html">Notification</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-group col-md-4">
+                    <p class="category-heading">Icons</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../icons/flag-icons.html">Flag Icons</a></li>
+                      <li class="nav-item"> <a class="nav-link" href="../icons/mdi.html">Mdi icons</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../icons/font-awesome.html">Font Awesome</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../icons/simple-line-icon.html">Simple Line Icons</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../icons/themify.html">Themify Icons</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="typcn typcn-document-text menu-icon"></i>
+                <span class="menu-title">Forms</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <ul class="submenu-item">
+                  <li class="nav-item"><a class="nav-link" href="basic_elements.html">Basic Elements</a></li>
+                  <li class="nav-item"><a class="nav-link" href="advanced_elements.html">Advanced Elements</a></li>
+                  <li class="nav-item"><a class="nav-link" href="validation.html">Validation</a></li>
+                  <li class="nav-item"><a class="nav-link" href="wizard.html">Wizard</a></li>
+                  <li class="nav-item"><a class="nav-link" href="text_editor.html">Text Editor</a></li>
+                  <li class="nav-item"><a class="nav-link" href="code_editor.html">Code Editor</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item mega-menu">
+              <a href="#" class="nav-link">
+                <i class="typcn typcn-chart-bar menu-icon"></i>
+                <span class="menu-title">Data</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <div class="col-group-wrapper row">
+                  <div class="col-group col-md-6">
+                    <p class="category-heading">Charts</p>
+                    <div class="submenu-item">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <ul>
+                            <li class="nav-item"><a class="nav-link" href="../charts/chartjs.html">Chart Js</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/morris.html">Morris</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/flot-chart.html">Flot</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/google-charts.html">Google Chart</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <ul>
+                            <li class="nav-item"><a class="nav-link" href="../charts/sparkline.html">Sparkline</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/c3.html">C3 Chart</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/chartist.html">Chartist</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../charts/justGage.html">JustGage</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">Table</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../tables/basic-table.html">Basic Table</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../tables/data-table.html">Data Table</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../tables/js-grid.html">Js-grid</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../tables/sortable-table.html">Sortable Table</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">Maps</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../maps/mapael.html">Mapael</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../maps/vector-map.html">Vector Map</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../maps/google-maps.html">Google Map</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item mega-menu">
+              <a href="#" class="nav-link">
+                <i class="typcn typcn-book menu-icon"></i>
+                <span class="menu-title">Sample Pages</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <div class="col-group-wrapper row">
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">User Pages</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../samples/login.html">Login</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/login-2.html">Login 2</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/register.html">Register</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/register-2.html">Register 2</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/lock-screen.html">Lockscreen</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">Error Pages</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../samples/error-400.html">400</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/error-404.html">404</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/error-500.html">500</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/error-505.html">505</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">E-commerce</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../samples/invoice.html">Invoice</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/pricing-table.html">Pricing Table</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/orders.html">Orders</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">General</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="../samples/search-results.html">Search Results</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/profile.html">Profile</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/timeline.html">Timeline</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/news-grid.html">News grid</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/portfolio.html">Portfolio</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../samples/faq.html">FAQ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="typcn typcn-th-large-outline menu-icon"></i>
+                <span class="menu-title">Apps</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <ul class="submenu-item">
+                  <li class="nav-item"><a class="nav-link" href="../apps/email.html">Email</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../apps/calendar.html">Calendar</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../apps/todo.html">Todo List</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../apps/gallery.html">Gallery</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="../documentation/documentation.html" class="nav-link">
+                <i class="typcn typcn-document-text menu-icon"></i>
+                <span class="menu-title">Documentation</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Fontawesome rating</h4>
+                  <p class="card-description">Simple rating with font-awesome icons</p>
+                  <select id="example-fontawesome" name="rating" autocomplete="off">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">CSS rating</h4>
+                  <p class="card-description">CSS star rating</p>
+                  <select id="example-css" name="rating" autocomplete="off">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">1/10 rating</h4>
+                  <p class="card-description">Rating from 1 to 10</p>
+                  <div class="br-wrapper br-theme-bars-1to10">
+                    <select id="example-1to10" name="rating" autocomplete="off" class="d-none">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7" selected="selected">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Movie rating</h4>
+                  <p class="card-description">Rating reviews</p>
+                  <div class="br-wrapper br-theme-bars-movie mb-4">
+                    <select id="example-movie" name="rating" autocomplete="off" class="d-none">
+                      <option value="Bad">Bad</option>
+                      <option value="Mediocre">Mediocre</option>
+                      <option value="Good" selected="selected">Good</option>
+                      <option value="Awesome">Awesome</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Square rating</h4>
+                  <p class="card-description">Rating in square options</p>
+                  <div class="br-wrapper br-theme-bars-square">
+                    <select id="example-square" name="rating" autocomplete="off" class="d-none">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Pill rating</h4>
+                  <p class="card-description">Rating options as pills</p>
+                  <div class="br-wrapper br-theme-bars-pill">
+                    <select id="example-pill" name="rating" autocomplete="off" class="d-none">
+                      <option value="A">A</option>
+                      <option value="B">B</option>
+                      <option value="C">C</option>
+                      <option value="D">D</option>
+                      <option value="E">E</option>
+                      <option value="F">F</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Reversed rating</h4>
+                  <p class="card-description">Rating in reversed order</p>
+                  <div class="mb-5">
+                    <select id="example-reversed" name="rating" autocomplete="off">
+                      <option value="Strongly Agree">Strongly Agree</option>
+                      <option value="Agree">Agree</option>
+                      <option value="Disagree">Disagree</option>
+                      <option value="Strongly Disagree">Strongly Disagree</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Horizontal rating</h4>
+                  <p class="card-description">Rating as horizontal options</p>
+                  <div class="br-wrapper br-theme-bars-horizontal">
+                    <select id="example-horizontal" name="rating" autocomplete="off" class="d-none">
+                      <option value="10">10</option>
+                      <option value="9">9</option>
+                      <option value="8">8</option>
+                      <option value="7">7</option>
+                      <option value="6">6</option>
+                      <option value="5">5</option>
+                      <option value="4">4</option>
+                      <option value="3">3</option>
+                      <option value="2">2</option>
+                      <option value="1" selected="selected">1</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-7 grid-margin stretch-card">
+              <!--x-editable starts-->
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">X-editable Editor</h4>
+                  <p class="card-description">Edit forms inline</p>
+                  <div class="template-demo">
+                    <form id="editable-form" class="editable-form">
+                      <div class="form-group row">
+                        <label class="col-6 col-lg-4 col-form-label">Simple text field</label>
+                        <div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="username" data-type="text" data-pk="1">awesome</a>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-6 col-lg-4 col-form-label">Empty text field, required</label>
+                        <div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-6 col-lg-4 col-form-label">Select, local array, custom display</label>
+                        <div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="sex" data-type="select" data-pk="1" data-value="" data-title="Select sex">not selected</a>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-6 col-lg-4 col-form-label">Combodate (date)</label>
+                        <div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">15/05/1984</a>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-6 col-lg-4 col-form-label">Textarea, buttons below. Submit by ctrl+enter</label>
+                        <div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="comments" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments">awesome user!</a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!--x-editable ends-->
+            </div>
+            <div class="col-lg-5 grid-margin stretch-card">
+              <!--form mask starts-->
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Form mask</h4>
+                  <p class="card-description">Gives a preview of input format</p>
+                  <form class="forms-sample">
+                    <div class="form-group row">
+                      <div class="col">
+                        <label>Date:</label>
+                        <input class="form-control" data-inputmask="'alias': 'date'" />
+                      </div>
+                      <div class="col">
+                        <label>Date time:</label>
+                        <input class="form-control" data-inputmask="'alias': 'datetime'" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label>Date with custom placeholder:</label>
+                      <input class="form-control" data-inputmask="'alias': 'date','placeholder': '*'" />
+                    </div>
+                    <div class="form-group">
+                      <label>Phone:</label>
+                      <input class="form-control" data-inputmask="'alias': 'phonebe'" />
+                    </div>
+                    <div class="form-group">
+                      <label>Currency:</label>
+                      <input class="form-control" data-inputmask="'alias': 'currency'" />
+                    </div>
+                    <div class="form-group row">
+                      <div class="col">
+                        <label>Email:</label>
+                        <input class="form-control" data-inputmask="'alias': 'email'" />
+                      </div>
+                      <div class="col">
+                        <label>Ip:</label>
+                        <input class="form-control" data-inputmask="'alias': 'ip'" />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!--form mask ends-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title d-flex">Dropify
+                    <small class="ml-auto align-self-end">
+                      <a href="dropify.html" class="font-weight-light" target="_blank">More dropify examples</a>
+                    </small>
+                  </h4>
+                  <input type="file" class="dropify" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Dropzone</h4>
+                  <form action="http://www.urbanui.com/file-upload" class="dropzone d-flex align-items-center" id="my-awesome-dropzone"></form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Jquery file upload</h4>
+                  <div class="file-upload-wrapper">
+                    <div id="fileuploader">Upload</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row grid-margin">
+            <div class="col-12">
+              <div class="card">
+                <div class="row">
+                  <div class="col-lg-4 grid-margin grid-margin-lg-0">
+                    <div class="card-body">
+                      <h4 class="card-title">Color picker (default)</h4>
+                      <p class="card-description">Click to select color</p>
+                      <input type='text' class="color-picker" value="#ffe74c" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 grid-margin grid-margin-lg-0">
+                    <div class="card-body">
+                      <h4 class="card-title">Color picker (complex)</h4>
+                      <p class="card-description">Advanced options for colorpicker</p>
+                      <input type='text' class="color-picker" data-mode="complex" value="#6bf178" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card-body">
+                      <h4 class="card-title">Color picker (gradient)</h4>
+                      <p class="card-description">Click to select gradient</p>
+                      <input type='text' class="color-picker" data-mode="gradient" value="#ff5964" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 grid-margin d-flex align-items-stretch">
+              <div class="row flex-grow">
+                <div class="col-12 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Datepicker (default)</h4>
+                      <p class="card-description">Click to open datepicker</p>
+                      <div id="datepicker-popup" class="input-group date datepicker">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon input-group-append border-left">
+                          <span class="typcn typcn-calendar-outline input-group-text"></span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--tag strats-->
+                <div class="col-12 stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Clockpicker (default)</h4>
+                      <p class="card-description">A simple clockpicker</p>
+                      <div class="input-group date" id="timepicker-example" data-target-input="nearest">
+                        <div class="input-group" data-target="#timepicker-example" data-toggle="datetimepicker">
+                          <input type="text" class="form-control datetimepicker-input" data-target="#timepicker-example"/>
+                          <div class="input-group-addon input-group-append"><i class="typcn typcn-time input-group-text"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--tag ends-->
+              </div>
+            </div>
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Inline datepicker</h4>
+                  <p class="card-description">An inline datepicker</p>
+                  <div id="inline-datepicker" class="datepicker"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="card-body">
+                      <h4 class="card-title">Form repeater</h4>
+                      <p class="card-description">Click the add button to repeat the form</p>
+                      <form class="form-inline repeater">
+                        <div data-repeater-list="group-a">
+                          <div data-repeater-item class="d-flex mb-2">
+                            <label class="sr-only" for="inlineFormInputGroup1">Users</label>
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text">@</span>
+                              </div>
+                              <input type="text" class="form-control form-control-sm" id="inlineFormInputGroup1" placeholder="Add user">
+                            </div>
+                            <button type="submit" class="btn btn-success btn-sm">Submit</button>
+                            <button data-repeater-delete type="button" class="btn btn-danger btn-sm icon-btn ml-2" >
+                              <i class="typcn typcn-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <button data-repeater-create type="button" class="btn btn-info btn-sm icon-btn ml-2 mb-2">
+                          <i class="typcn typcn-plus"></i>
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="card-body">
+                      <h4 class="card-title">Input Tag</h4>
+                      <p class="card-description">Type to add a new tag</p>
+                      <input name="tags" id="tags" value="London,Canada,Australia,Mexico" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+            <div class="w-100 clearfix">
+                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018 <a href="http://www.urbanui.com/" class="text-muted" target="_blank">Urbanui</a>. All rights reserved.</span>
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center text-muted">Hand-crafted & made with <i class="typcn typcn-heart-outline text-danger"></i></span>
+            </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- base:js -->
+  <script src="../../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../../js/off-canvas.js"></script>
+  <script src="../../../js/hoverable-collapse.js"></script>
+  <script src="../../../js/template.js"></script>
+  <script src="../../../js/settings.js"></script>
+  <script src="../../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- plugin js for this page -->
+  <script src="../../../vendors/jquery-bar-rating/jquery.barrating.min.js"></script>
+  <script src="../../../vendors/jquery-asColor/jquery-asColor.min.js"></script>
+  <script src="../../../vendors/jquery-asGradient/jquery-asGradient.min.js"></script>
+  <script src="../../../vendors/jquery-asColorPicker/jquery-asColorPicker.min.js"></script>
+  <script src="../../../vendors/x-editable/bootstrap-editable.min.js"></script>
+  <script src="../../../vendors/moment/moment.min.js"></script>
+  <script src="../../../vendors/tempusdominus-bootstrap-4/tempusdominus-bootstrap-4.js"></script>
+  <script src="../../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../../../vendors/dropify/dropify.min.js"></script>
+  <script src="../../../vendors/jquery-file-upload/jquery.uploadfile.min.js"></script>
+  <script src="../../../vendors/jquery-tags-input/jquery.tagsinput.min.js"></script>
+  <script src="../../../vendors/dropzone/dropzone.js"></script>
+  <script src="../../../vendors/jquery.repeater/jquery.repeater.min.js"></script>
+  <script src="../../../vendors/inputmask/jquery.inputmask.bundle.js"></script>
+  <script src="../../../vendors/inputmask/inputmask.binding.js"></script>
+  <script src="../../../vendors/inputmask/phone-be.js"></script>
+  <script src="../../../vendors/inputmask/phone-ru.js"></script>
+  <script src="../../../vendors/inputmask/phone.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- Custom js for this page-->
+  <script src="../../../js/formpickers.js"></script>
+  <script src="../../../js/form-addons.js"></script>
+  <script src="../../../js/x-editable.js"></script>
+  <script src="../../../js/dropify.js"></script>
+  <script src="../../../js/dropzone.js"></script>
+  <script src="../../../js/jquery-file-upload.js"></script>
+  <script src="../../../js/formpickers.js"></script>
+  <script src="../../../js/form-repeater.js"></script>
+  <!-- End custom js for this page-->
+  </body>
+
+
+<!-- Mirrored from www.urbanui.com/polluxui/template/demo/horizontal-default-light/pages/forms/advanced_elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jun 2019 17:35:48 GMT -->
+</html>
