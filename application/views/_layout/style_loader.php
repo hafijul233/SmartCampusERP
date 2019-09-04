@@ -15,12 +15,7 @@ if (isset($type)) {
 foreach ($type as $style) {
 if ($style == 'form') { ?>
   <!-- form style -->
-  <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/libs/select2/dist/css/select2.min.css">
-  <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/libs/jquery-minicolors/jquery.minicolors.css">
-  <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-  <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/libs/quill/dist/quill.snow.css">
-  <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/libs/jquery-steps/jquery.steps.css">
-  <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/libs/jquery-steps/steps.css">
+  <link rel="stylesheet" href="<?= base_url(). 'resources/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css'; ?>">
 <?php
 } if($style == 'table') { ?>
   <!-- table style -->

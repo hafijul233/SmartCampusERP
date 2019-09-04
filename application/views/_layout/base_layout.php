@@ -1,87 +1,66 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-// Page_Title
-$title = str_replace('_', ' ', $this->uri->segment(2));
-$title = ucwords($title);
-
 // Controller_Title
 $base = str_replace('_', ' ', $this->uri->segment(1));
 $base = ucwords($base);
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Blank Page</title>
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Favicon icon -->
-  <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() . 'dist/img/favicon.png'; ?>">
-  <title><?= $title . ' | ' . APP_NAME; ?></title>
-    <?php
-    $this->load->view('_layout/style_load');
-    ?>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title><?= $page_title . ' | ' . APP_NAME; ?></title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="<?= base_url() . 'resources/vendors/typicons/typicons.css'; ?>">
+  <link rel="stylesheet" href="<?= base_url() . 'resources/vendors/material-design/css/materialdesignicons.min.css'; ?>">
+  <link rel="stylesheet" href="<?= base_url() . 'resources/vendors/css/vendor.bundle.base.css'; ?>">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <?php $this->load->view('_layout/style_loader'); ?>
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="<?= base_url() . 'resources/css/themes/horizontal-layout-light.css'; ?>">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="<?= base_url() . 'resources/images/favicon.png'; ?>" />
 </head>
 <body>
-<!-- Preloader -->
-<div class="preloader">
-  <div class="lds-ripple">
-    <div class="lds-pos"></div>
-    <div class="lds-pos"></div>
+<div class="container-scroller">
+  <!-- partial:partials/_horizontal-navbar.html -->
+  <div class="horizontal-menu">
+    <!-- User Header -->
+    <?php $this->load->view('_layout/header'); ?>
+    <!-- Navigation Bar -->
+    <?php $this->load->view('_layout/navigator'); ?>
   </div>
-</div>
-<!-- Main wrapper -->
-<div id="main-wrapper">
-  <!-- Topbar header -->
-    <?php
-    $role = $this->session->user_role;
-
-    $this->load->view('_layout/' . $role . '/header');
-    ?>
-  <!-- Sidebar -->
-    <?php
-    $this->load->view('_layout/' . $role . '/sidebar');
-    ?>
-  <!-- Page wrapper  -->
-  <div class="page-wrapper">
-    <!-- Bread crumb and right sidebar toggle -->
-    <div class="page-breadcrumb">
-      <div class="row">
-        <div class="col-12 d-flex no-block align-items-center">
-          <h4 class="page-title"><?= strtoupper($title); ?></h4>
-          <div class="ml-auto text-right">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href="<?= base_url() . $this->uri->segment(1); ?>"><?= $base; ?></a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                    <?= $title; ?>
-                </li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-      </div>
+  <!-- partial -->
+  <div class="container-fluid page-body-wrapper">
+    <div class="main-panel">
+      <?php $this->load->view($view_path); ?>
+      <!-- content-wrapper ends -->
+      <!-- footer -->
+      <?php $this->load->view('_layout/footer'); ?>
+      <!-- /.footer -->
     </div>
-    <!-- Container fluid  -->
-      <?php
-      $this->load->view($view_path);
-      ?>
-    <!-- footer -->
-      <?php
-      $this->load->view('_layout/footer');
-      ?>
-    <!-- End footer -->
+    <!-- main-panel ends -->
   </div>
-  <!-- End Page wrapper  -->
+  <!-- page-body-wrapper ends -->
 </div>
-<!-- End Wrapper -->
-<?php
-$this->load->view('_layout/script_load');
-?>
+<!-- container-scroller -->
+
+<!-- base:js -->
+<script src="<?= base_url() . 'resources/vendors/js/jquery-3.2.1.min.js'; ?>"></script>
+<script src="<?= base_url() . 'resources/vendors/js/popper.min.js'; ?>"></script>
+<script src="<?= base_url() . 'resources/vendors/js/bootstrap.min.js'; ?>"></script>
+<script src="<?= base_url() . 'resources/vendors/js/perfect-scrollbar.min.js'; ?>"></script>
+
+<script src="<?= base_url() . 'resources/js/hoverable-collapse.js'; ?>"></script>
+<script src="<?= base_url() . 'resources/js/template.js'; ?>"></script>
+<!-- /.base.js -->
+<!-- plugin js for this page -->
+<?php $this->load->view('_layout/script_loader'); ?>
+<!-- End custom js for this page-->
 </body>
 </html>

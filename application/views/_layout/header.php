@@ -1,164 +1,132 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<header class="topbar" data-navbarbg="skin5">
-  <nav class="navbar top-navbar navbar-expand-md navbar-dark">
-    <div class="navbar-header" data-logobg="skin5">
-      <!-- This is for the sidebar toggle which is visible on mobile only -->
-      <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
-          class="ti-menu ti-close"></i></a>
-      <!-- Logo -->
-      <a class="navbar-brand" href="javascript:void(0)">
-        <!-- Logo icon -->
-        <b class="logo-icon p-l-10">
-          <!-- Dark Logo icon -->
-          <img src="<?= base_url(); ?>resources/images/logo-icon.png" alt="homepage" class="light-logo"
-               style="max-width: 50px;"/>
-        </b>
-        <!--End Logo icon -->
-        <!-- Logo text -->
-        <span class="logo-text">
-          <!-- dark Logo text -->
-          <img src="<?= base_url(); ?>resources/images/logo-text.png" alt="homepage" class="light-logo"
-               style="max-width: 160px;"/>
-        </span>
-      </a>
-      <!-- End Logo -->
-      <!-- Toggle which is visible on mobile only -->
-      <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
-         data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-         aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
+<nav class="navbar top-navbar col-lg-12 col-12 p-0">
+  <div class="container-fluid">
+    <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+      <a class="navbar-brand brand-logo" href="index.html"><img
+            src="http://www.urbanui.com/polluxui/template/images/logo.svg" alt="logo"/></a>
+      <a class="navbar-brand brand-logo-mini" href="index.html"><img
+            src="http://www.urbanui.com/polluxui/template/images/logo-mini.svg" alt="logo"/></a>
     </div>
-    <!-- End Logo -->
-    <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
-      <!-- toggle and nav items -->
-      <ul class="navbar-nav float-left mr-auto">
-        <li class="nav-item d-none d-md-block"><a class="nav-link sidebartoggler waves-effect waves-light"
-                                                  href="javascript:void(0)" data-sidebartype="mini-sidebar"><i
-              class="mdi mdi-menu font-24"></i></a></li>
-        <!-- create new -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-             aria-haspopup="true" aria-expanded="false">
-            <span class="d-none d-md-block">Quick Access <i class="fa fa-angle-down"></i></span>
-            <span class="d-block d-md-none"><i class="fa fa-plus"></i></span>
+    <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+      <ul class="navbar-nav mr-lg-2">
+        <li class="nav-item nav-profile dropdown">
+          <a class="nav-link">
+            <img
+                src="<?= base_url() . 'writable/profile_pic/' . (isset($_SESSION['profile_pic']) ? $this->session->profile_pic : 'default_user_pic.png'); ?>"
+                alt="profile"/>
+            <span class="nav-profile-name"><?= $this->session->full_name; ?></span>
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
         </li>
-        <!-- Search -->
-        <li class="nav-item search-box"><a class="nav-link waves-effect waves-dark" href="javascript:void(0)"><i
-              class="ti-search"></i></a>
-            <?= form_open('home/search', array('class' => 'app-search position-absolute')); ?>
-          <input type="text" class="form-control" placeholder="Write search item &amp; press enter"> <a class="srh-btn"><i
-              class="ti-close"></i></a>
-            <?= form_close(); ?>
-
+        <li class="nav-item nav-user-status dropdown">
+          <p class="mb-0">Last login was 23 hours ago.</p>
         </li>
       </ul>
-      <!-- Right side toggle and nav items -->
-      <ul class="navbar-nav float-right">
-        <!-- Comment -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown"
-             aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-bell font-24"></i>
+      <ul class="navbar-nav navbar-nav-right">
+        <li class="nav-item nav-date dropdown">
+          <a class="nav-link d-flex justify-content-center align-items-center date datepicker" href="javascript:void(0);"id="datepicker-popup"
+             data-toggle="dropdown" id="profileDropdown">
+            <h6 class="date mb-0">Today : Mar 23</h6>
+            <i class="typcn typcn-calendar"></i>
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
+             id="messageDropdown" href="#" data-toggle="dropdown">
+            <i class="typcn typcn-mail mx-0"></i>
+            <span class="count"></span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+            <p class="mb-0 font-weight-normal dropdown-header text-center">Messages</p>
+            <a class="dropdown-item preview-item">
+              <div class="preview-thumbnail">
+                <img src="<?= base_url() . 'resources/images/faces/face4.jpg'; ?>" alt="image" class="profile-pic">
+              </div>
+              <div class="preview-item-content flex-grow">
+                <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                </h6>
+                <p class="font-weight-light small-text text-muted mb-0">
+                  The meeting is cancelled
+                </p>
+              </div>
+            </a>
+            <a class="dropdown-item preview-item">
+              <div class="preview-thumbnail">
+                <img src="<?= base_url() . 'resources/images/faces/face2.jpg'; ?>" alt="image" class="profile-pic">
+              </div>
+              <div class="preview-item-content flex-grow">
+                <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                </h6>
+                <p class="font-weight-light small-text text-muted mb-0">
+                  New product launch
+                </p>
+              </div>
+            </a>
+            <a class="dropdown-item preview-item">
+              <div class="preview-thumbnail">
+                <img src="<?= base_url() . 'resources/images/faces/face3.jpg'; ?>" alt="image" class="profile-pic">
+              </div>
+              <div class="preview-item-content flex-grow">
+                <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                </h6>
+                <p class="font-weight-light small-text text-muted mb-0">
+                  Upcoming board meeting
+                </p>
+              </div>
+            </a>
           </div>
         </li>
-        <!-- End Comment -->
-        <!-- Messages -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2" data-toggle="dropdown"
-             aria-haspopup="true" aria-expanded="false"> <i class="font-24 mdi mdi-comment-processing"></i>
+        <li class="nav-item dropdown mr-0">
+          <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center"
+             id="notificationDropdown" href="#" data-toggle="dropdown">
+            <i class="typcn typcn-user mx-0"></i>
           </a>
-          <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown" aria-labelledby="2">
-            <ul class="list-style-none">
-              <li>
-                <div class="">
-                  <!-- Message -->
-                  <a href="javascript:void(0)" class="link border-top">
-                    <div class="d-flex no-block align-items-center p-10">
-                      <span class="btn btn-success btn-circle"><i class="ti-calendar"></i></span>
-                      <div class="m-l-10">
-                        <h5 class="m-b-0">Event today</h5>
-                        <span class="mail-desc">Just a reminder that event</span>
-                      </div>
-                    </div>
-                  </a>
-                  <!-- Message -->
-                  <a href="javascript:void(0)" class="link border-top">
-                    <div class="d-flex no-block align-items-center p-10">
-                      <span class="btn btn-info btn-circle"><i class="ti-settings"></i></span>
-                      <div class="m-l-10">
-                        <h5 class="m-b-0">Settings</h5>
-                        <span class="mail-desc">You can customize this template</span>
-                      </div>
-                    </div>
-                  </a>
-                  <!-- Message -->
-                  <a href="javascript:void(0)" class="link border-top">
-                    <div class="d-flex no-block align-items-center p-10">
-                      <span class="btn btn-primary btn-circle"><i class="ti-user"></i></span>
-                      <div class="m-l-10">
-                        <h5 class="m-b-0">Pavan kumar</h5>
-                        <span class="mail-desc">Just see the my admin!</span>
-                      </div>
-                    </div>
-                  </a>
-                  <!-- Message -->
-                  <a href="javascript:void(0)" class="link border-top">
-                    <div class="d-flex no-block align-items-center p-10">
-                      <span class="btn btn-danger btn-circle"><i class="fa fa-link"></i></span>
-                      <div class="m-l-10">
-                        <h5 class="m-b-0">Luanch Admin</h5>
-                        <span class="mail-desc">Just see the my new admin!</span>
-                      </div>
-                    </div>
-                  </a>
+          <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+               aria-labelledby="notificationDropdown">
+            <p class="mb-0 font-weight-normal dropdown-header text-center">User Panel</p>
+            <a class="dropdown-item preview-item"
+               href="<?= base_url() . 'user/profile/' . $this->session->user_name; ?>">
+              <div class="preview-thumbnail">
+                <div class="preview-icon bg-success">
+                  <i class="typcn typcn-user-outline mx-0"></i>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <!-- End Messages -->
-        <!-- User profile and search -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown"
-             aria-haspopup="true" aria-expanded="false">
-            <img src="<?= base_url(). 'writable/profile_pic/' . (isset($this->session->profile_pic) ? $this->session->profile_pic : 'default_user_pic.png'); ?>" alt="user" class="rounded-circle" width="40">
-            <span class="text-white">
-                <?= $this->session->user_name; ?>
-            </span>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right user-dd animated">
-            <a class="dropdown-item" href="javascript:void(0)">
-              <i class="ti-user m-r-5 m-l-5"></i>
-                <?= $this->session->full_name; ?>
+              </div>
+              <div class="preview-item-content">
+                <h6 class="preview-subject font-weight-normal"><?= $this->session->user_name . '\'s Profile'; ?></h6>
+                <p class="font-weight-light small-text mb-0 text-muted text-center text-capitalize">
+                    <?= $this->session->user_role; ?>
+                </p>
+              </div>
             </a>
-            <a class="dropdown-item" href="javascript:void(0)">
-              <i class="ti-wallet m-r-5 m-l-5"></i> Activity Log
+            <a class="dropdown-item preview-item" href="<?= base_url() . 'setting/user_account'; ?>">
+              <div class="preview-thumbnail">
+                <div class="preview-icon bg-warning">
+                  <i class="typcn typcn-cog-outline mx-0"></i>
+                </div>
+              </div>
+              <div class="preview-item-content">
+                <h6 class="preview-subject font-weight-normal">Account Settings</h6>
+              </div>
             </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="javascript:void(0)">
-              <i class="ti-settings m-r-5 m-l-5"></i> Account Settings
-            </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="<?= base_url(); ?>authenticate/logout">
-              <i class="fa fa-power-off m-r-5 m-l-5"></i> Logout
+            <a class="dropdown-item preview-item" href="<?= base_url() . 'authenticate/logout'; ?>">
+              <div class="preview-thumbnail">
+                <div class="preview-icon bg-info">
+                  <i class="typcn typcn-arrow-back mx-0"></i>
+                </div>
+              </div>
+              <div class="preview-item-content">
+                <h6 class="preview-subject font-weight-normal">Logout</h6>
+              </div>
             </a>
           </div>
         </li>
-        <!-- User profile and search -->
       </ul>
+      <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+              data-toggle="horizontal-menu-toggle">
+        <span class="typcn typcn-th-menu"></span>
+      </button>
     </div>
-  </nav>
-</header>
+  </div>
+</nav>
+

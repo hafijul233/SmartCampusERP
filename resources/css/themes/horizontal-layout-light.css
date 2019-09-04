@@ -21674,7 +21674,7 @@ code {
 
 .card .card-title {
   color: #001737;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.3rem;
   text-transform: capitalize;
   font-size: 1.125rem;
 }
@@ -24616,7 +24616,7 @@ dl li {
 
 .tooltip-static-demo .bs-tooltip-right-demo .arrow:before,
 .tooltip-static-demo .bs-tooltip-left-demo .arrow:before {
-  top: calc((100%-0.8rem)/2);
+  top: calc((100%-1rem)/2);
 }
 
 .tooltip {
@@ -27914,7 +27914,12 @@ div.tagsinput span.tag a {
 }
 
 .main-panel {
-  background-image: url(../../../resources/images/auth/login.png);
+  background: #f4f5fa;
+  width: 100%;
+}
+
+.login-main-panel {
+  background-image: url(../../../resources/images/auth/erp-bg.jpg);
   background-size: cover;
 }
 
@@ -28078,7 +28083,7 @@ div.tagsinput span.tag a {
 .horizontal-menu .top-navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link .nav-profile-name {
   margin-left: .5rem;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 767px) {
@@ -28398,7 +28403,7 @@ div.tagsinput span.tag a {
 }
 
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link .menu-title {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link .menu-icon {
@@ -28528,6 +28533,7 @@ div.tagsinput span.tag a {
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item.active > .nav-link i,
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item.active > .nav-link .menu-arrow {
   color: #844fc1;
+  font-weight: bolder;
 }
 
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item .submenu {
@@ -28740,4 +28746,3 @@ div.tagsinput span.tag a {
   }
 }
 
-/*# sourceMappingURL=../maps/horizontal-layout-light/style.css.map */

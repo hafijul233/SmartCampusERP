@@ -22,19 +22,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 <div class="container-scroller">
   <div class="container-fluid page-body-wrapper full-page-wrapper">
-    <div class="main-panel">
+    <div class="login-main-panel">
       <div class="content-wrapper d-flex align-items-center auth px-0">
         <div class="row w-100 mx-0">
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-              <div class="brand-logo">
+              <div class="brand-logo text-center">
                 <img src="http://www.urbanui.com/polluxui/template/images/logo-dark.svg" alt="logo">
               </div>
               <h4>Hello! let's get started</h4>
               <h6 class="font-weight-light">Sign in to continue.</h6>
                 <?= form_open('authenticate/login', array('class' => 'pt-3')); ?>
               <div class="form-group">
-                <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
+                <input type="text" class="form-control form-control-lg" id="exampleInputEmail1"
                        placeholder="Email Address"
                        name="email" value="<?= set_value('email'); ?>" tabindex="1" required autofocus>
                 <span class="text-danger"><?= form_error('email'); ?></span>
@@ -44,10 +44,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                        placeholder="Password"
                        name="password" tabindex="2" required autofocus>
               </div>
+              <?php $this->notification->alert(); ?>
               <div class="mt-3">
-                <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN
-                  IN
-                </button>
+                <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN IN</button>
               </div>
               <div class="my-2 d-flex justify-content-between align-items-center">
                 <div class="form-check">
@@ -71,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <!-- container-scroller -->
 <!-- base:js -->
-<script src="<?= base_url() . 'resources/vendors/js/vendor.bundle.base.js'; ?>"></script>
+<script src="<?= base_url() . 'resources/vendors/js/perfect-scrollbar.min.js'; ?>"></script>
 <!-- endinject -->
 <!-- inject:js -->
 <script src="<?= base_url() . 'resources/js/off-canvas.js'; ?>"></script>

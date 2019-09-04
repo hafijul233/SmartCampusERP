@@ -49,7 +49,14 @@ class Authenticate extends CI_Controller
 
             // if there is a error
             if (is_string($user_info)) {
-                $data['msg'] = $user_info;
+                //display on alert box
+                $_SESSION['msg'] = $user_info;
+                //error type
+                if($user_info == 'User Not Found.')
+                    $_SESSION['error_type'] = 'danger';
+                else
+                    $_SESSION['error_type'] = 'warning';
+
             } else {
                 $this->session->set_userdata($user_info);
                 redirect(base_url() . 'home/dashboard');
@@ -130,6 +137,7 @@ class Authenticate extends CI_Controller
 
         $this->load->view('authenticate/recovery', $data);
     }
+
     //Session Lock View
     public function lockscreen($current_url = NULL)
     {
@@ -162,6 +170,7 @@ class Authenticate extends CI_Controller
 
         $this->load->view('authenticate/lockscreen', $data);
     }
+
     //System Logout View / process
     public function logout()
     {

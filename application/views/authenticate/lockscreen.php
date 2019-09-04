@@ -37,7 +37,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div class="auth-form-transparent text-left p-5 text-center">
             <img src="<?= base_url() . 'resources/images/faces/face13.jpg'; ?>" class="lock-profile-img" alt="img">
             <?= form_open('authentication/lockscreen', array('class' => 'pt-5')); ?>
-
               <div class="form-group">
                 <label for="examplePassword1">Password to unlock</label>
                 <input type="password" class="form-control text-center" id="examplePassword1" placeholder="Password"
@@ -47,8 +46,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <div class="mt-5">
                 <button type="submit" class="btn btn-block btn-success btn-lg font-weight-medium" >Unlock</button>
               </div>
+              <?php $this->notification->alert(); ?>
               <div class="mt-3 text-center">
-                <a href="<?= base_url() . 'authentication/login'; ?>" class="auth-link text-white">Sign in using a different account</a>
+                <a href="<?= base_url() . 'authenticate/login'; ?>" class="auth-link text-white">Sign in using a different account</a>
               </div>
             <?= form_close(); ?>
 
@@ -62,7 +62,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <!-- container-scroller -->
 <!-- base:js -->
-<script src="<?= base_url() . 'resources/vendors/js/vendor.bundle.base.js'; ?>"></script>
+<script src="<?= base_url() . 'resources/vendors/js/perfect-scrollbar.min.js'; ?>"></script>
 <!-- endinject -->
 <!-- inject:js -->
 <script src="<?= base_url() . 'resources/js/off-canvas.js'; ?>"></script>
