@@ -16,7 +16,7 @@ foreach ($type as $script) {
 if ($script == 'form') { ?>
   <!-- form script -->
   <script src="<?= base_url(). 'resources/js/pages/form.js'; ?>"></script>
-  <script src="<?= base_url(); ?>resources/js/pages/header.js"></script>
+
 <?php } if ($script == 'table') { ?>
   <!-- table script -->
   <script src="<?= base_url(); ?>assets/extra-libs/multicheck/datatable-checkbox-init.js"></script>

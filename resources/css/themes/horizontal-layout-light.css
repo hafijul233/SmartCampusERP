@@ -22128,7 +22128,7 @@ code {
 .tt-hint {
   border: 1px solid #f3f3f3;
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 select.form-control, select.asColorPicker-input, .dataTables_wrapper select,
@@ -22271,7 +22271,7 @@ select.border-dark.tt-hint:focus {
 }
 
 .form-group label {
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   line-height: 1.4rem;
   vertical-align: top;
   margin-bottom: .5rem;
@@ -23090,7 +23090,7 @@ ul,
 ol,
 dl {
   padding-left: 1rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 ul li,

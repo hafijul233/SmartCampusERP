@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </ul>
       <ul class="navbar-nav navbar-nav-right">
         <li class="nav-item nav-date dropdown">
-          <a class="nav-link d-flex justify-content-center align-items-center date datepicker" href="javascript:void(0);"id="datepicker-popup"
+          <a class="nav-link d-flex justify-content-center align-items-center date datepicker" href="javascript:void(0)" id="datepicker-popup"
              data-toggle="dropdown" id="profileDropdown">
             <h6 class="date mb-0">Today : Mar 23</h6>
             <i class="typcn typcn-calendar"></i>

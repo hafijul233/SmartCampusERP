@@ -25,6 +25,7 @@ class Admission extends CI_Controller
         $this->applicant_list();
     }
 
+    //Admit Student View
     public function admit_student()
     {
         $data = array(
@@ -33,8 +34,47 @@ class Admission extends CI_Controller
             'view_path' => 'admission/admit_student'
         );
 
+        $this->form_validation->set_rules('email', 'Email Address', 'required|max_length[255]|valid_email');
+        $this->form_validation->set_rules('password', 'Password', 'required|min_length[8]');
+
         $this->load->view('_layout/base_layout', $data);
     }
+
+    //Ajaxem Email and user name validation
+    public function user_email_validation()
+    {
+        $user_name = $this->input->get('user_name');
+        $email_address = $this->input->get('email');
+
+        //Email checking query
+        $email_query = $this->db->get_where('tbl_users', array('email' => $email_address));
+
+        //User_name checking query
+        $user_name_query = $this->db->get_where('tbl_users', array('user_name' => $user_name));
+
+        //Email Validation
+        if($email_query->num_rows > 0) {
+            $email_error = "This Email Address Already Existed. Try Different One.";
+        } else {
+            $email_error = FALSE;
+        }
+
+        //User Name Validation
+        if($user_name_query->num_rows > 0) {
+            $user_error = "This Username Already Existed. Try Different One.";
+        } else {
+            $user_error = FALSE;
+        }
+
+        $errors = (object) array(
+            'user_name' => $user_error,
+            'email_error' => $email_error
+        );
+
+        echo json_encode($errors);
+
+    }
+
 
     public function applicant_list()
     {

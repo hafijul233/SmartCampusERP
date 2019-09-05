@@ -27,8 +27,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </li>
       <li class="nav-item mega-menu">
         <a href="#" class="nav-link">
-          <i class="typcn typcn-puzzle-outline menu-icon"></i>
-          <span class="menu-title">UI Elements</span>
+          <i class="typcn typcn-mortar-board menu-icon"></i>
+          <span class="menu-title">Academy</span>
           <i class="menu-arrow"></i>
         </a>
         <div class="submenu">
@@ -36,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="col-group col-md-4">
               <div class="row">
                 <div class="col-12">
-                  <p class="category-heading">Basic Elements</p>
+                  <p class="category-heading">Attendance</p>
                   <div class="submenu-item">
                     <div class="row">
                       <div class="col-md-6">
@@ -66,7 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="col-group col-md-4">
               <div class="row">
                 <div class="col-12">
-                  <p class="category-heading">Advanced Elements</p>
+                  <p class="category-heading">Class Resources</p>
                   <div class="submenu-item">
                     <div class="row">
                       <div class="col-md-6">
@@ -91,7 +91,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </div>
             </div>
             <div class="col-group col-md-4">
-              <p class="category-heading">Icons</p>
+              <p class="category-heading">Examination</p>
               <ul class="submenu-item">
                 <li class="nav-item"><a class="nav-link" href=" icons/flag-icons.html">Flag Icons</a></li>
                 <li class="nav-item"> <a class="nav-link" href=" icons/mdi.html">Mdi icons</a></li>
@@ -106,7 +106,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <li class="nav-item">
         <a href="#" class="nav-link">
           <i class="typcn typcn-document-text menu-icon"></i>
-          <span class="menu-title">Forms</span>
+          <span class="menu-title">Finances</span>
           <i class="menu-arrow"></i></a>
         <div class="submenu">
           <ul class="submenu-item">
@@ -121,8 +121,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </li>
       <li class="nav-item mega-menu">
         <a href="#" class="nav-link">
-          <i class="typcn typcn-chart-bar menu-icon"></i>
-          <span class="menu-title">Data</span>
+          <i class="typcn typcn-news menu-icon"></i>
+          <span class="menu-title">Library</span>
           <i class="menu-arrow"></i></a>
         <div class="submenu">
           <div class="col-group-wrapper row">
@@ -172,7 +172,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <li class="nav-item mega-menu">
         <a href="#" class="nav-link">
           <i class="typcn typcn-book menu-icon"></i>
-          <span class="menu-title">Sample Pages</span>
+          <span class="menu-title">HR Placement</span>
           <i class="menu-arrow"></i></a>
         <div class="submenu">
           <div class="col-group-wrapper row">
@@ -220,7 +220,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <li class="nav-item">
         <a href="#" class="nav-link">
           <i class="typcn typcn-th-large-outline menu-icon"></i>
-          <span class="menu-title">Apps</span>
+          <span class="menu-title">Utilities & Payment</span>
           <i class="menu-arrow"></i></a>
         <div class="submenu">
           <ul class="submenu-item">
@@ -234,7 +234,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <li class="nav-item">
         <a href=" documentation/documentation.html" class="nav-link">
           <i class="typcn typcn-document-text menu-icon"></i>
-          <span class="menu-title">Documentation</span></a>
+          <span class="menu-title">Reports</span></a>
       </li>
     </ul>
   </div>

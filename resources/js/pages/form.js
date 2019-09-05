@@ -1,5 +1,9 @@
 $(function () {
-    $("#nextTab").click(function() {
-        $('#formTab li:eq(0) a').next().tab('show');
+    $('.btnNext').click(function () {
+        $('.nav-link .active').next('li').find('a').trigger('click');
+    });
+
+    $('.btnBack').click(function () {
+        $('.nav-link .active').prev('li').find('a').trigger('click');
     });
 });
