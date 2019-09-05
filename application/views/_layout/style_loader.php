@@ -16,6 +16,7 @@ foreach ($type as $style) {
 if ($style == 'form') { ?>
   <!-- form style -->
   <link rel="stylesheet" href="<?= base_url(). 'resources/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css'; ?>">
+  <link rel="stylesheet" href="<?= base_url(). 'resources/vendors/datatables.net-bs4/dataTables.bootstrap4.css'; ?>">
 <?php
 } if($style == 'table') { ?>
   <!-- table style -->

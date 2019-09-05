@@ -22,7 +22,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <li class="nav-item"><a class="nav-link" href="<?= base_url() . 'admission/cancel_re_admission'; ?>">Cancel / Re-Admission</a></li>
             <li class="nav-item"><a class="nav-link" href="<?= base_url() . 'admission/student_transfer'; ?>">Student Transfer</a></li>
             <li class="nav-item"><a class="nav-link" href="<?= base_url() . 'admission/admission_report'; ?>">Admission Report</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?= base_url() . '#'; ?>">-----</a></li>
           </ul>
         </div>
       </li>

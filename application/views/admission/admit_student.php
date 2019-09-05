@@ -34,6 +34,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </li>
             <li class="nav-item">
               <a class="nav-link" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="document-tab" data-toggle="tab" href="#document" role="tab" aria-controls="document" aria-selected="false">Documents</a>
+            </li>
           </ul>
           <div class="tab-content">
             <div class="tab-pane fade show active" id="erp-account" role="tabpanel" aria-labelledby="erp-account-tab">
@@ -96,6 +100,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </p>
             </div>
             <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+              <h4>Contact us </h4>
+              <p>
+                Feel free to contact us if you have any questions!
+              </p>
+              <p>
+                <i class="typcn typcn-phone-outline text-info"></i>
+                +123456789
+              </p>
+              <p>
+                <i class="typcn typcn-mail text-success"></i>
+                contactus@example.com
+              </p>
+            </div>
+              <div class="tab-pane fade" id="document" role="tabpanel" aria-labelledby="document-tab">
               <h4>Contact us </h4>
               <p>
                 Feel free to contact us if you have any questions!
